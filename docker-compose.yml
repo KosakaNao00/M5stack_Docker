@@ -1,13 +1,14 @@
 version: "2"
 services:
   ros2:
-    build:
-      context: .
-      # args:
-      #   - HTTP_PROXY=$HTTP_PROXY
-      #   - http_proxy=$http_proxy
-      #   - HTTPS_PROXY=$HTTPS_PROXY
-      #   - https_proxy=$https_proxy
+    image: wisteriahill/ros:foxy-ros-base-l4t-r32.4.4
+    # build:
+    #   context: .
+    # args:
+    #   - HTTP_PROXY=$HTTP_PROXY
+    #   - http_proxy=$http_proxy
+    #   - HTTPS_PROXY=$HTTPS_PROXY
+    #   - https_proxy=$https_proxy
     ports:
       - "2018:2018"
 
