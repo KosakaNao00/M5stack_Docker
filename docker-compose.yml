@@ -1,0 +1,6 @@
+version: "2"
+services:
+  ros2:
+    build: .
+    ports:
+      - "2018:2018"
