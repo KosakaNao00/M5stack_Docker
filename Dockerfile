@@ -5,7 +5,8 @@ RUN apt install git
 
 RUN git clone https://github.com/eProsima/Micro-XRCE-DDS-Agent.git
 WORKDIR Micro-XRCE-DDS-Agent
-RUN git checkout -b v1.3.0 refs/tags/v1.3.0 
+
+RUN git checkout -b v1.3.0 refs/tags/v1.3.0
 RUN mkdir build && cd build
 RUN cmake ..
 RUN make
